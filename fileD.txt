@@ -1,2 +1,6 @@
 commit in D
+<<<<<<< HEAD
 merge by E
+=======
+add in D
+>>>>>>> D
