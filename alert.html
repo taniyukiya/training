@@ -4,22 +4,19 @@
         <meta charset="UFT-8">
         <title>alert</title>
         <style>
+            h1 {text-align:center}
             body {background: #ffffff;}
             div{
                 background: #ffffff;
                 width: 500px;
-                height: 500px;
+                height: 50vh;
                 text-align:center ;
-            }
-            #switch_css{
-                background: #ffffff;
-                text-align:center ;
-                display:block;
-                cursor:pointer;
-                border: 5px solid #d44141;
-            }
-            #switch_css.after{
-                background:chartreuse;
+                position:absolute;
+                top:0;
+                bottom:0;
+                left:0;
+                right:0;
+                margin:auto;
             }
         </style>
     </head>
@@ -27,12 +24,20 @@
             <h1>開発基礎研修課題</h1>
         <div>
             <button type="button" value="countUp" onclick = buttonClick()>AlertCountButton</button>
+            <br>
+            <button type="button" value="countReset" onclick = countReset()>Reset Count</button> 
         </div>
 
     </body>
-    <script>  
+    <script>
+        var count=0;  
     function buttonClick(){ 
-        alert('Click');
+        count ++;
+        alert('ClickCount'+count);
+
+    }
+    function countReset(){
+        count = 0;
     }
 
     </script>
