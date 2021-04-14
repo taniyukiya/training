@@ -11,7 +11,7 @@
                 height: 500px;
                 text-align:center ;
             }
-            .hover_test:hover{color:rgba(126, 125, 131, 0.315); background-color:rgb(247, 245, 243);}
+            #hover_test:hover{color:rgba(126, 125, 131, 0.315); background-color:rgb(247, 245, 243); transition:1s;}
 
             #button_css{
                 background: #ffffff;
@@ -28,17 +28,21 @@
     </head>
     <body>
             <h1>開発基礎研修課題</h1>
-        <div class="hover_test">
+
+
+        <div id="hover_test">
             <p>色覚テスト</p>
         </div>
 
-        <div id="button_css"><p class="button_test">クリックすると色が変わる</p>
 
+        <div id="button_css"><p id="button_test">クリックすると色が変わる</p>
         </div> 
+
+
     </body>
     <script>    
     document.getElementById("button_css").onclick = function(){
-        document.getElementsByClassName("button_test").innerHTML = "変わった？"; 
+        document.getElementById("button_test").innerHTML = "色が変わった？"; 
         this.classList.toggle("after");
     };
 
