@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="UFT-8">
-        <title>CSS</title>
+        <title>alert</title>
         <style>
             body {background: #ffffff;}
             div{
@@ -11,36 +11,36 @@
                 height: 500px;
                 text-align:center ;
             }
-            .hover_test:hover{color:rgba(126, 125, 131, 0.315); background-color:rgb(247, 245, 243);}
-
-            #button_css{
+            #switch_css{
                 background: #ffffff;
                 text-align:center ;
                 display:block;
                 cursor:pointer;
                 border: 5px solid #d44141;
             }
-            #button_css.after{
+            #switch_css.after{
                 background:chartreuse;
             }
-
         </style>
     </head>
     <body>
             <h1>開発基礎研修課題</h1>
-        <div class="hover_test">
-            <p>色覚テスト</p>
+        <div>
+            <button type="button" value="button" onclick= buttonClick() {alert};>絶対押さないで</button>
         </div>
 
-        <div id="button_css"><p class="button_test">クリックすると色が変わる</p>
+        
 
-        </div> 
     </body>
     <script>    
-    document.getElementById("button_css").onclick = function(){
-        document.getElementsByClassName("button_test").innerHTML = "変わった？"; 
+    document.getElementById("switch_css").onclick = function(){
+        document.getElementById("switch_test").innerHTML = "黄緑に変わった？"; 
         this.classList.toggle("after");
     };
+
+    function buttonclick(){
+
+    }
 
     </script>
 </html>
