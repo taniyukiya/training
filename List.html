@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UFT-8">
+        <title>list</title>
+        <style>
+            h1 {text-align:center}
+            body{background: #ffffff;
+                position:fixed;}
+            form{
+                background:#45f5f5;
+                width:100vw;
+                position:fixed;
+                text-align:left;
+                bottom:0;
+                left:0;
+            }
+            
+            #inputfield{
+                background: #ddf5f5;
+                width:100%;
+            }
+        </style>
+    </head>
+    <body>
+            <h1>開発基礎研修課題</h1>
+        <form>
+            <input id=inputfield type="text" name="testText" maxlength="60">
+            <br>
+            <input type="button" value="Output" onclick = "buttonClick()">
+        </form>
+        <p id="outputMessage"></p>
+    </body>
+    <script>
+        function buttonClick(){
+            // input valueの取得
+            const textbox = document.getElementById("inputfield");
+            // input valueの初期化（任意）
+        
+            // input valueをtextに持つ要素の生成
+            const inputValue = textbox.value;
+            // list表示させたい要素の取得と、上の要素の追加
+            if(inputValue.length>20){
+                alert("長すぎるので出力したくありません");
+            }
+            else{
+            const output = "a:"+inputValue;
+            document.getElementById("outputMessage").innerHTML = output;
+            }
+        }
+    </script>
+</html>
+
