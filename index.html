@@ -35,7 +35,7 @@
         </div>
 
 
-        <div id="button_css"><p id="button_test">クリックすると色が変わる</p>
+        <div id="button_css"><p id="button_test">クリックすると色が変わる()</p>
         </div> 
 
             <button type="button" value="colorchange" onclick = buttonClick()>
@@ -46,7 +46,6 @@
 
     </body>
     <script>   
-            var count =1;
     document.getElementById("button_css").onclick = function(){
         document.getElementById("button_test").innerHTML = "色が変わった？"; 
         this.classList.toggle("after");
