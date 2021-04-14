@@ -7,7 +7,7 @@
             h1 {text-align:center}
             body{background: #ffffff;
                 position:fixed;}
-            div{
+            form{
                 background:#45f5f5;
                 width:100vw;
                 position:fixed;
@@ -24,11 +24,11 @@
     </head>
     <body>
             <h1>開発基礎研修課題</h1>
-        <div>
+        <form>
             <input id=inputfield type="text" name="testText" maxlength="60">
             <br>
-            <button  type="button" value="textOutput" onclick = buttonClick()>入力</button>
-        </div>
+            <input type="button" value="Output" onclick = buttonClick()>
+        </form>
     </body>
     <script>
         function buttonClick(){
