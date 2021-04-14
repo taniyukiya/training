@@ -40,12 +40,13 @@
             // input valueをtextに持つ要素の生成
             const inputValue = textbox.value;
             // list表示させたい要素の取得と、上の要素の追加
-            if(inputValue.length>60){
-                alert("error");
+            if(inputValue.length>20){
+                alert("長すぎるので出力したくありません");
             }
-
+            else{
             const output = "a:"+inputValue;
             document.getElementById("outputMessage").innerHTML = output;
+            }
         }
     </script>
 </html>
