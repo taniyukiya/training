@@ -27,22 +27,25 @@
         <form>
             <input id=inputfield type="text" name="testText" maxlength="60">
             <br>
-            <input type="button" value="Output" onclick = buttonClick()>
+            <input type="button" value="Output" onclick = "buttonClick()">
         </form>
+        <p id="outputMessage"></p>
     </body>
     <script>
         function buttonClick(){
             // input valueの取得
-
+            const textbox = document.getElementById("inputfield");
             // input valueの初期化（任意）
-
+        
             // input valueをtextに持つ要素の生成
-
+            const inputValue = textbox.value;
             // list表示させたい要素の取得と、上の要素の追加
-
-            if(){
-            
+            if(inputValue.length>60){
+                alert("error");
             }
+
+            const output = "a:"+inputValue;
+            document.getElementById("outputMessage").innerHTML = output;
         }
     </script>
 </html>
