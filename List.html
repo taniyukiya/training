@@ -2,43 +2,48 @@
 <html>
     <head>
         <meta charset="UFT-8">
-        <title>alert</title>
+        <title>list</title>
         <style>
             h1 {text-align:center}
-            body {background: #ffffff;}
+            body{background: #ffffff;
+                position:fixed;}
             div{
-                background: #ffffff;
-                width: 500px;
-                height: 50vh;
-                text-align:center ;
-                position:absolute;
-                top:0;
+                background:#45f5f5;
+                width:100vw;
+                position:fixed;
+                text-align:left;
                 bottom:0;
                 left:0;
-                right:0;
-                margin:auto;
+            }
+            
+            #inputfield{
+                background: #ddf5f5;
+                width:100%;
             }
         </style>
     </head>
     <body>
             <h1>開発基礎研修課題</h1>
         <div>
-            <button type="button" value="countUp" onclick = buttonClick()>AlertCountButton</button>
+            <input id=inputfield type="text" name="testText" maxlength="60">
             <br>
-            <button type="button" value="countReset" onclick = countReset()>Reset Count</button> 
+            <button  type="button" value="textOutput" onclick = buttonClick()>入力</button>
         </div>
-
     </body>
     <script>
-        var count=0;  
-        function buttonClick(){ 
-            count ++;
-            alert('ClickCount'+count);
+        function buttonClick(){
+            // input valueの取得
+
+            // input valueの初期化（任意）
+
+            // input valueをtextに持つ要素の生成
+
+            // list表示させたい要素の取得と、上の要素の追加
+
+            if(){
+            
+            }
         }
-        
-        function countReset(){
-        count = 0;
-    }
     </script>
 </html>
 
