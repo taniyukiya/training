@@ -16,7 +16,9 @@ const fs =require('fs');
             if(typeof obj === "object"){
                 var strValue='';
                 for(key in obj){
-                    strValue += getValue(obj[key]);                  
+                   if(key=="name"){
+                        resultList.push();
+                   }                 
                 }
                 
             }
@@ -25,7 +27,7 @@ const fs =require('fs');
         }
 
 
-    }
+    
     catch(err){
         console.log(error)
     }
